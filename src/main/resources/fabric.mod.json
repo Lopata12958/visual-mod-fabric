@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "visualmod",
+  "version": "${version}",
+  "name": "Visual Mod",
+  "description": "Advanced visual effects mod with Pulse Visual, Laminar Visual, and OPKA Visual modules",
+  "authors": [
+    "Lopata12958"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Lopata12958/visual-mod-fabric",
+    "sources": "https://github.com/Lopata12958/visual-mod-fabric",
+    "issues": "https://github.com/Lopata12958/visual-mod-fabric/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/visualmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.visualmod.VisualModClient"
+    ]
+  },
+  "mixins": [
+    "visualmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": ">=17.0.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
